@@ -1,12 +1,81 @@
+### html ###
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <title>APS</title>
 </head>
 <body>
+    <nav>
+          <li>item 1</li>
+          <li>item 4</li>
+          <li>item 3 </li>
+    
+    </nav>
+    <div class="containe">
+        <div class="up">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam vero magnam laboriosam, labore quasi!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim illum aut rerum accusantium. Voluptatum, illo.</p>
+        </div>
+        <div class="down">
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim distinctio iste placeat, obcaecati at dignissimos. Quisquam nobis est aspernatur tempora placeat eaque consequatur! Error voluptatibus cumque sed eligendi harum, repellat minus corporis, delectus nulla quae veniam blanditiis, perspiciatis sint dicta.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe velit exercitationem maxime nam mollitia consequuntur delectus, cumque itaque aliquid enim cum praesentium ut natus laborum obcaecati id perspiciatis accusantium atque accusamus? Quam sint ratione expedita totam et, dolor accusantium quia.</p>
+        
+                </div>
+            </div>
+
+        </div>
+
+    </div>
     
 </body>
 </html>
+
+
+### css ###
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, brown, white);
+}
+.containe{
+    margin: 0 auto;
+    padding: 15px;
+    height: 600px;
+    position: relative;
+}
+.up{
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.644);
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    top: 50px;
+    left: 60px; 
+    padding: 10px; 
+    text-align: justify;
+}
+.down{
+    z-index: 2;
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 150px;
+    padding-right: 10px;
+    right: 40px;
+    text-align: justify;
+
+    
+}
+
